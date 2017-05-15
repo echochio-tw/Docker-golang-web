@@ -28,3 +28,6 @@ docker run -d -p 192.168.0.70:9093:9090 web
 kubectl create -f kubernetes.yaml
 
 http://kubernetes_IP:30707/
+
+# for openshift docker image : docker.io/echochio/openshift-go-web
+port 8080 
