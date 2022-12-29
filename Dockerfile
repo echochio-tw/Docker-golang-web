@@ -1,8 +1,3 @@
-# final stage
-FROM centurylink/ca-certs
-COPY --from=build-env /go/go /
-ENTRYPOINT ["/go"]
-[root@IP70 web]# more Dockerfile
 # build stage
 FROM golang:alpine AS build-env
 RUN apk update && apk upgrade && \
